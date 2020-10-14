@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   
   resources :messages
   resources :conversations
+  get '/conversation/:id', to: 'conversations#findAccepted'
   
 end
 
