@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   
   resources :helps, params: :id
   get '/publish', to: 'helps#publish'
+  
+  resources :accepted_helps
 
 end
 
