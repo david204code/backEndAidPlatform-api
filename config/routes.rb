@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/activeAcceptedHelps', to: 'accepted_helps#activeAcceptedHelps'
   patch '/updateActive/:id', to: 'accepted_helps#updateActive'
   
+  resources :messages
   resources :conversations
   
 end
