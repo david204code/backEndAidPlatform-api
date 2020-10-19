@@ -44,6 +44,11 @@ class UsersController < ApplicationController
     render json: {user: user, governmentId_url: governmentId_url}
   end
 
+  def getLast
+    user = User.last
+    render json: user.id
+  end
+
   private
 
   def user_params
